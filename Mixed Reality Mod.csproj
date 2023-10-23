@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>MixedRealityMod</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Assemblies>D:\Steam\steamapps\common\Cooking Simulator VR\CookingSimulatorVR_Data\Managed</Assemblies>
+		<MelonLoaderDir>D:\Steam\steamapps\common\Cooking Simulator VR\MelonLoader\net35</MelonLoaderDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(MelonLoaderDir)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(MelonLoaderDir)\MelonLoader.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(Assemblies)\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="SteamVR">
+			<HintPath>$(Assemblies)\SteamVR.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(Assemblies)\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		
+	</ItemGroup>
+
+</Project>
